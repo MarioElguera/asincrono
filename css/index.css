@@ -9,11 +9,10 @@ body {
 }
 
 .header_logo {
-    background: linear-gradient(to right, black, white);
-    color: white;
+
     padding: 15px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .logo_izq {
@@ -22,7 +21,7 @@ body {
 }
 
 .menu {
-    display: flex;
+    text-align: end;
 }
 
 a {
@@ -40,29 +39,33 @@ a {
 .main-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+.content-info {
+    text-align: left;
+    padding: 40px 15px;
 }
 
 .mosaic {
-    width: 100%;
     display: grid;
-    grid-template-columns: 6, 1fr;
-    grid-template-rows: 3, 1fr;
+    grid-template-columns: 8, 1fr;
+    grid-template-rows: 6, 1fr;
 
     grid-template-areas:
-        "item1 item1 item2 item3 item3 item4"
-        "item1 item1 item5 item3 item3 item6"
-        "item7 item8 item9 item10 item11 item12"
-        "item13 item14 item15 item16 item17 item18";
+        "item1 item1 item2 item2 item3 item3 item4 item4"
+        "item1 item1 item2 item2 item3 item3 item4 item4"
+        "item5 item5 item6 item6 item7 item7 item8 item8"
+        "item5 item5 item6 item6 item7 item7 item8 item8"
+        "item9 item9 item10 item10 item11 item11 item12 item12"
+        "item9 item9 item10 item10 item11 item11 item12 item12";
 }
 
 .mosaic__item {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(123, 23, 217);
     text-align: center;
-    padding: 50px;
+    padding: 10px;
 }
 
 img {
@@ -118,44 +121,14 @@ img {
     grid-area: item12;
 }
 
-.mosaic__item--13 {
-    grid-area: item13;
-}
-
-.mosaic__item--14 {
-    grid-area: item14;
-}
-
-.mosaic__item--15 {
-    grid-area: item15;
-}
-
-.mosaic__item--16 {
-    grid-area: item16;
-}
-
-.mosaic__item--17 {
-    grid-area: item17;
-}
-
-.mosaic__item--18 {
-    grid-area: item18;
-}
-
 .content {
     text-align: center;
-    padding: 20px;
-    border: 5px solid;
-    border-color: red;
-
     width: 100%;
 }
 
 footer {
-    background-color: black;
-    color: white;
     padding: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 @media (max-width: 1240px) {
