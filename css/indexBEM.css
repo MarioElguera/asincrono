@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: cursive;
+    width: 100%;
+}
+
+.header_logo {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 10% 90%;
+
+    a {
+        padding-left: 80px;
+    }
+}
+
+.logo_izq {
+    width: 100px;
+    height: 20px;
+}
+
+.menu {
+    text-align: center;
+}
+
+
+
+.mosaic {
+    display: grid;
+    grid-template-columns: 12, 1fr;
+    grid-template-rows: 10, 1fr;
+
+    grid-template-areas:
+        "item1 item1 item2 item2 item3 item3 item4 item4 item5 item5 item5 item5"
+        "item1 item1 item2 item2 item3 item3 item4 item4 item5 item5 item5 item5"
+        "item6 item6 item7 item7 item3 item3 item8 item8 item5 item5 item5 item5"
+        "item6 item6 item7 item7 item3 item3 item8 item8 item5 item5 item5 item5"
+
+        "item9 item9 item9 item9 item10 item10 item11 item11 item12 item12 item13 item13"
+        "item9 item9 item9 item9 item10 item10 item11 item11 item12 item12 item13 item13"
+        "item9 item9 item9 item9 item14 item14 item15 item15 item12 item12 item16 item16"
+        "item9 item9 item9 item9 item14 item14 item15 item15 item12 item12 item16 item16"
+
+        "item17 item17 item17 item17 item18 item18 item19 item19 item20 item20 item21 item21"
+        "item17 item17 item17 item17 item18 item18 item19 item19 item20 item20 item21 item21";
+}
+
+.mosaic__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.mosaic__item--1 {
+    grid-area: item1;
+}
+
+.mosaic__item--2 {
+    grid-area: item2;
+}
+
+.mosaic__item--3 {
+    grid-area: item3;
+}
+
+.mosaic__item--4 {
+    grid-area: item4;
+}
+
+.mosaic__item--5 {
+    grid-area: item5;
+}
+
+.mosaic__item--6 {
+    grid-area: item6;
+}
+
+.mosaic__item--7 {
+    grid-area: item7;
+}
+
+.mosaic__item--8 {
+    grid-area: item8;
+}
+
+.mosaic__item--9 {
+    grid-area: item9;
+}
+
+.mosaic__item--10 {
+    grid-area: item10;
+}
+
+.mosaic__item--11 {
+    grid-area: item11;
+}
+
+.mosaic__item--12 {
+    grid-area: item12;
+}
+
+.mosaic__item--13 {
+    grid-area: item13;
+}
+
+.mosaic__item--14 {
+    grid-area: item14;
+}
+
+.mosaic__item--15 {
+    grid-area: item15;
+}
+
+.mosaic__item--16 {
+    grid-area: item16;
+}
+
+.mosaic__item--17 {
+    grid-area: item17;
+}
+
+.mosaic__item--18 {
+    grid-area: item18;
+}
+
+.mosaic__item--19 {
+    grid-area: item19;
+}
+
+.mosaic__item--20 {
+    grid-area: item20;
+}
+
+.mosaic__item--21 {
+    grid-area: item21;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    padding: 0% 40%;
+    text-align: center;
+}
+
+.content-logo {
+    img {
+        height: 40px;
+        width: 125px;
+    }
+}
+
+.content-text {}
+
+footer {
+    padding: 20px;
+    text-align: center;
+}

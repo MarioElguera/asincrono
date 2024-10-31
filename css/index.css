@@ -9,7 +9,6 @@ body {
 }
 
 .header_logo {
-
     padding: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -73,9 +72,7 @@ img {
     height: 100%;
 }
 
-.mosaic__item--1 {
-    grid-area: item1;
-}
+.mosaic__item--1 {    grid-area: item1;}
 
 .mosaic__item--2 {
     grid-area: item2;
