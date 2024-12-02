@@ -8,32 +8,40 @@ body {
     width: 100%;
 }
 
-.header_logo {
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
-.logo_izq {
+.header__logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header__logo-image {
     width: 100px;
     height: 20px;
 }
 
-.menu {
-    text-align: end;
+.header__nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-a {
-    padding-left: 80px;
+.header__nav-item {
+    padding: 0 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
 }
 
-.header_logo_izq {
-    text-align: left;
+.header__nav-item:hover {
+    color: #007bff;
 }
 
-.header_logo_der {
-    text-align: right;
-}
 
 .main-content {
     display: flex;
@@ -72,7 +80,9 @@ img {
     height: 100%;
 }
 
-.mosaic__item--1 {    grid-area: item1;}
+.mosaic__item--1 {
+    grid-area: item1;
+}
 
 .mosaic__item--2 {
     grid-area: item2;

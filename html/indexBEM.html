@@ -9,14 +9,14 @@
 </head>
 
 <body>
-    <header class="header_logo">
-        <div class="header_logo_izq">
-            <img class="logo_izq" src="../imagenes/bem/Logo-dark.png">
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo-img" src="../imagenes/bem/Logo-dark.png" alt="Logo">
         </div>
-        <nav class="menu">
-            <a>MAIN</a>
-            <a>ABOUT</a>
-            <a>CONTACT</a>
+        <nav class="header__menu">
+            <a class="header__menu-link" href="#">MAIN</a>
+            <a class="header__menu-link" href="#">ABOUT</a>
+            <a class="header__menu-link" href="#">CONTACT</a>
         </nav>
     </header>
 
@@ -49,25 +49,24 @@
         <br>
         <br>
         <br>
-        <div class="content">
-            <div class="content-logo">
-                <img src="../imagenes/bem/Logo-dark.png">
+        <section class="content">
+            <div class="content__logo">
+                <img class="content__logo-img" src="../imagenes/bem/Logo-dark.png" alt="Logo Content">
             </div>
-            <br>
-            <div class="content-text">
-                <a>Aliquam lorem ante, dapibus in, viverra quis, elit feugiat
-                    Etiam sit tellus. Phasellus rutru nulla euter ameter
-                    metus varius laoreet amet orci.
-                </a>
-            </div>
+            <p class="content__text">
+                Aliquam lorem ante, dapibus in, viverra quis, elit feugiat. Etiam sit tellus.
+                Phasellus rutrum nulla euter amet metus varius laoreet amet orci.
+            </p>
+        </section>
+
         </div>
     </main>
     <br>
     <br>
     <br>
     <hr>
-    <footer>
-        <div>© 2021 Qode Interactive, All Rights Reserved</div>
+    <footer class="footer">
+        <div class="footer__text">© 2021 Qode Interactive, All Rights Reserved</div>
     </footer>
 
 </body>

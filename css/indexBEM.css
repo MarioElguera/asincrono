@@ -8,26 +8,42 @@ body {
     width: 100%;
 }
 
-.header_logo {
+.header {
     padding: 15px;
     display: grid;
     grid-template-columns: 10% 90%;
-
-    a {
-        padding-left: 80px;
-    }
+    align-items: center;
+    gap: 10px;
 }
 
-.logo_izq {
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-img {
     width: 100px;
     height: 20px;
 }
 
-.menu {
+.header__menu {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
     text-align: center;
 }
 
+.header__menu-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
 
+.header__menu-link:hover {
+    color: #007BFF;
+}
 
 .mosaic {
     display: grid;
@@ -147,20 +163,31 @@ img {
 }
 
 .content {
-    padding: 0% 40%;
+    padding: 0 40%;
     text-align: center;
 }
 
-.content-logo {
-    img {
-        height: 40px;
-        width: 200px;
-    }
+.content__logo {
+    margin-bottom: 15px;
 }
 
-.content-text {}
+.content__logo-img {
+    height: 40px;
+    width: 200px;
+}
 
-footer {
+.content__text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.footer {
     padding: 20px;
     text-align: center;
+}
+
+.footer__text {
+    font-size: 14px;
+    color: black;
 }
